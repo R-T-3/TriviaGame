@@ -13,6 +13,22 @@
 // }
 // loop to iterate 
 
-$(document).ready(function() {
-    
-})
+window.onload = function() {
+  $("#start").on("click", startGame);
+  $("#done").on("click", done);
+}
+
+  var secondsLeft = 28;
+  var intervalID;
+  var clockRunning = false;
+
+function startGame() {
+    $("#questions").removeClass("hide");
+    $("#start").addClass("hide");
+}
+
+
+
+
+
+
